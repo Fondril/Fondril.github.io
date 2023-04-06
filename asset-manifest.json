@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/fondidia/static/css/main.d0ae86b0.css",
+    "main.js": "/fondidia/static/js/main.40755360.js",
+    "static/js/787.89d2c4b4.chunk.js": "/fondidia/static/js/787.89d2c4b4.chunk.js",
+    "static/media/akalibackground.png": "/fondidia/static/media/akalibackground.7e46792d6221d1995e88.png",
+    "static/media/multimedia-feed-background-2.png": "/fondidia/static/media/multimedia-feed-background-2.37ccd1b267bdb0675cac.png",
+    "index.html": "/fondidia/index.html",
+    "main.d0ae86b0.css.map": "/fondidia/static/css/main.d0ae86b0.css.map",
+    "main.40755360.js.map": "/fondidia/static/js/main.40755360.js.map",
+    "787.89d2c4b4.chunk.js.map": "/fondidia/static/js/787.89d2c4b4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0ae86b0.css",
+    "static/js/main.40755360.js"
+  ]
+}
