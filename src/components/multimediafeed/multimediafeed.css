@@ -1,0 +1,98 @@
+.multimedia-feed-container {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      /* object-fit: fill; */
+      position: relative;
+}
+
+.multimedia-feed-background-image {
+      display: flex;
+      height: inherit;
+      width: inherit;
+}
+
+.multimedia-feed-main-window-wrapper {
+      width: 76%;
+      height: 64%;
+      background-color: black;
+      position: absolute;
+      top: 18%;
+      left: 12%;
+}
+
+.multimedia-feed-left-arrow {
+      height: 10%;
+      width: 3%;
+      position: absolute;
+      top: 44.5%;
+      left: 6%;
+      transition: all 0.3s
+}
+.multimedia-feed-left-arrow:hover {
+      transition: all 0.3s;
+      transform: scale(130%);
+}
+.multimedia-feed-right-arrow {
+      height: 10%;
+      width: 3%;
+      position: absolute;
+      top: 44.5%;
+      left: 89%;
+      transition: all 0.3s
+}
+.multimedia-feed-right-arrow:hover {
+      transition: all 0.3s;
+      transform: scale(130%);
+    }
+
+.case1 {
+      width: 76%;
+      height: 64%;
+      background-color: rgb(255, 0, 0);
+      position: absolute;
+      top: 18%;
+      left: 12%;
+}
+
+.case2 {
+      width: 76%;
+      height: 64%;
+      background-color: rgb(50, 6, 247);
+      position: absolute;
+      top: 18%;
+      left: 12%;
+}
+
+.multimedia-feed-button {
+      height: 3rem;
+      width: 20rem;
+      background-color: #32006A;
+      position: absolute;
+      top: 89%;
+      left: 15%;
+      border-radius: 15px;
+      transition: all 0.3s linear;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      border: 4px solid #0e042d;
+      box-shadow: 3px 3px 7px 3px rgb(0 0 0 / 0.4);
+}
+.multimedia-feed-button:hover {
+      transition: all 0.3s linear;
+      transform: scale(110%);
+}
+
+.multimedia-feed-bar {
+      position: absolute;
+      height: 3.5rem;
+      width: 35%;
+      border-color: gray;
+      top: 6%;
+      left: 55%;
+      border-top:  4px solid grey;
+      border-bottom:  4px solid grey;
+}
