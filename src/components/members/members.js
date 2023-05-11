@@ -1,9 +1,9 @@
 import React from 'react';
 import './members.css';
 
-function Members () {
+function Members() {
   return (
-    <div className="emptydiv">
+    <div id="members" className="emptydiv">
 
     </div>
   );

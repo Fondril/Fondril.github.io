@@ -26,7 +26,7 @@ function MultimediaFeed ({multiMediaFeedIndex, multiMediaFeedLeftArrow, multiMed
 
 
   return (
-    <div className="multimedia-feed-container">
+    <div id="multim" className="multimedia-feed-container">
 
             <div id='mmf-navbar' className='multimedia-feed-navbar'>
                   <div className='mmf-navbar-element active padding'>All</div>
