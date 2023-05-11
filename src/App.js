@@ -13,7 +13,7 @@ const App = () => {
             setMultimediafeedindex((multiMediaFeedIndex) => {
                   let index = multiMediaFeedIndex;
                   multiMediaFeedIndex === 0?
-                        index = 2 :
+                        index = 4 :
                         index = multiMediaFeedIndex-1;
                   return index;
             });
@@ -21,7 +21,7 @@ const App = () => {
       const multiMediaFeedRightArrow = () => {
             setMultimediafeedindex((multiMediaFeedIndex) => {
                   let index = multiMediaFeedIndex;
-                  multiMediaFeedIndex === 2?
+                  multiMediaFeedIndex === 4?
                         index = 0 :
                         index = multiMediaFeedIndex+1;
                   return index;
