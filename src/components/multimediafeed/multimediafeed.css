@@ -6,6 +6,7 @@
       border-top: 6px ridge #0e042d;
       border-bottom: 6px ridge #0e042d;
       position: relative;
+      scroll-margin-top: 70px;
 }
 
 .multimedia-feed-button {
