@@ -10,7 +10,7 @@ const Navigation = ({ navbutton, buttonClicked}) => {
                         { navbutton === true?
                               <div className="navbar">
                                           <div className='navbarmainarea'>
-                                                <div className='navlinks'>Log In</div>
+                                                <div className='navlinks'>Theme</div>
                                                 <div className='navlinks'>Multimedia</div>
                                                 <div className='navlinks'>Interesting Shit</div>
                                                 <div className='navlinks'>Latest Multimedia</div>
@@ -18,20 +18,17 @@ const Navigation = ({ navbutton, buttonClicked}) => {
                                                 <div className='navlinks'>Online</div>
                                                 <div className='navlinks'>Discord</div>
                                                 <div className='navlinks'>Donation</div>
+                                                <div className='navlinks'>Sign Out</div>
                                           </div>
                                           <div className='navbarbuttonarea'>
-                                                <div className='navbarbutton' type='button' onClick={buttonClicked}> 
-                                                      <img src={leftchevron} alt='arrow to da waaall'  />
+                                                <div className='navbar-button-wrapper' type='button' onClick={buttonClicked}> 
+                                                      <img className='navbar-button' src={leftchevron} alt='arrow to da waaall'  />
                                                 </div>
                                           </div>
                               </div>
                         :
-                              <div className="">
-                                    <div className='navbarbuttonareawithoutmenu'>
-                                          <div className='navbarbuttowithoutmenu' onClick={buttonClicked}> 
-                                                <img src={rightchevron} alt='tooo the wiindow' />
-                                          </div>
-                                    </div>
+                               <div className='navbar-button-without-menu-wrapper' onClick={buttonClicked}> 
+                                           <img className='navbar-button-without-menu' src={rightchevron} alt='tooo the wiindow' />
                               </div>
                         }
                   </div>

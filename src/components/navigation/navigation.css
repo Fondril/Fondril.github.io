@@ -6,7 +6,7 @@
       left: 0;
       position: fixed;
       top: 15vh;
-      width: 8%;
+      width: 11%;
       z-index: 3000;
       font-family: 'Poppins', sans-serif;
       font-weight: 500;
@@ -20,6 +20,7 @@
       font-size: 16px;
       opacity: 0.95;
       display: flex;
+      width: 72.78%;
       flex-direction: column;
       border-radius: 0px 12px 12px 0;
       box-shadow: 3px 3px 7px 3px rgb(0 0 0 / 0.4);
@@ -29,7 +30,7 @@
       align-items: center;
       padding-top: 1.5em;
       padding-bottom: 1.5em;
-      transition: all 0.3s
+      transition: all 0.3s;
   }
 
   .navlinks {
@@ -40,41 +41,43 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 2%;
+      width: 27.27%;
   }
 
-  .navbarbutton {
+  .navbar-button-wrapper {
       height: 100px;
-      transition: all 0.3s
-      /* cursor: url(/public/assets/cursortoleft.png), auto; */
-  }
-  .navbarbutton:hover {
-        transition: all 0.3s;
-        transform: scale(130%);
-      }
-      
-      
- .navbarbuttonareawithoutmenu {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            left: 0;      
-            height: 70vh;
-            position: fixed;
-            top: 15vh;
-            width: 2%;
-            z-index: 3000;
-            transition: all 0.3s
-            
- }
- .navbarbuttowithoutmenu {
-       height: 100px;
-       width: 100%;
-       /* cursor: url(/public/assets/cursortoright.png), auto; */
- }
- .navbarbuttowithoutmenu:hover {
       transition: all 0.3s;
-      transform: scale(130%);
+      width: 100%;
+  }
+  .navbar-button {
+      height: 100%;
+      width: 100%;
+      object-fit: fill;
+ }
+  .navbar-button-wrapper:hover {
+      transition: all 0.2s linear;
+      transform: scaleX(160%);
+      transform: scaleY(130%);
+      }
+
+ .navbar-button-without-menu-wrapper {
+      width: 3%;
+      height: 7%;
+      left: 0;
+      top: 48%;
+      position: fixed;
+      z-index: 9999;
+      transition: all 0.2s linear;
+ }
+ .navbar-button-without-menu {
+      height: 100%;
+      width: 100%;
+      object-fit: fill;
+ }
+ .navbar-button-without-menu-wrapper:hover {
+      transition: all 0.2s linear;
+      transform: scaleX(160%);
+      transform: scaleY(130%);
     }
 
 .navbarwrapper {

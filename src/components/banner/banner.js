@@ -3,7 +3,9 @@ import './banner.css';
 import akalibackground from '../../assets/akalibackground.png';
 
 function Banner () {
+
   return (
+      
     <div className="banner">
             <div className='bannernamewrapper'>
                   <div className='bannername'>
