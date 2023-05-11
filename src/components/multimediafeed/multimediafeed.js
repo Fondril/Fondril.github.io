@@ -5,21 +5,19 @@ import rightarrow from '../../assets/multimedia-feed-arrow-to-right.png';
 import './mainwindow.css';
 import featuredProjects from './projects';
 
-const projectsIndex = [0, 1, 2, 3, 4, 5, 6, 7 ,8, 9, 10, 11]
-
-const feedcase = (window, index) => {
+const feedcase = ( item ) => {
       return (
-      <div className={window}>
+      <div className={'feed-window'} key={item.projectname}>
             <div className='mmf-media'>
-                  {featuredProjects[index].picture}
+                  {item.picture}
                   <div className='mmf-submit-name-wrapper'>
                         <div className='mmf-submit-text'>Subbmited by: </div><hr/>
-                        <div className='mmf-submit-name'>{featuredProjects[index].author}</div>
+                        <div className='mmf-submit-name'>{item.author}</div>
                   </div>
             </div>
             <div className='mmf-text-wrapper'>
-                  <p className='mmf-text-header'>{featuredProjects[index].projectname}</p>
-                  <p className='mmf-text'>{featuredProjects[index].description}</p>
+                  <p className='mmf-text-header'>{item.projectname}</p>
+                  <p className='mmf-text'>{item.description}</p>
             </div>
       </div> 
 );}
@@ -41,7 +39,7 @@ function MultimediaFeed ({multiMediaFeedIndex, multiMediaFeedLeftArrow, multiMed
             </div>
 
             <div className='mmf-feed-scroll'>
-                                    {projectsIndex.map(item => feedcase('feed-window', item))}
+                                    {featuredProjects.map(item => feedcase(item))}
             </div>
 
             <div className='left-arrow-wrapper' type='button' onClick={multiMediaFeedLeftArrow}> 
