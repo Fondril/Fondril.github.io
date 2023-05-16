@@ -4,6 +4,7 @@ a{
 li{
     list-style-type: none;
 }
+
 .nav {
     box-shadow: 0 2px 35px 0 rgba(0, 0, 0, .1);
     width: 100%;
@@ -32,10 +33,11 @@ li{
     padding-left: 8px;
 }
 
-.navbar-nav {
-    margin-left: 80px;
+.navbar-nav1 {
+    margin-left: 20px;
     column-gap: 25px;
     margin-right: auto;
+    margin-top: 15px;
 }
 
 .nav-item {
@@ -44,29 +46,19 @@ li{
 .navDark .nav-item {
     color: white;
 }
+.nav-link:active{
+color: aqua;
+}
 
 .nav-item.active {
     position: relative;
 }
 
-.nav-item.active::before {
-    content: '';
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    top: 50%;
-    left: -30px;
-    background: black;
-    border-radius: 5px;
-    transform: rotate(45deg) translateY(-70%);
-}
+
 .navDark .nav-item.active::before {
     background: white;
 }
 
-.nav-link {
-    color: inherit;
-}
 
 .toggler {
     display: flex;
@@ -77,6 +69,8 @@ li{
 .toggler p {
     font-size: 0.625rem;
     font-weight: 600;
+    margin-top: 15px;
+
 }
 
 .toggler--slider {
