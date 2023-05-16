@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Navig(props) {
 
     return (
-        <Navbar className={props.darkMode ? `${styles.navDark} flex align-items-center` : `${styles.nav} flex align-items-center`} bg={props.darkMode ? "dark" : "light"} id="nb" expand="lg">
+        <Navbar className={props.darkMode ? `${styles.navDark} flex align-items-center` : `${styles.nav} flex align-items-center`} id="nb" expand="lg">
                 <Navbar.Toggle aria-controls="navbar-dark-example" />
                 <ul className={`flex align-items-center ${styles["navbar-nav1"]}`}>
                         <Nav.Link className={`${styles["nav-item"]}`} href="#banner">Home</Nav.Link>
