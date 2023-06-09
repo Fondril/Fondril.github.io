@@ -1,6 +1,7 @@
 .App {
       text-align: center;
       font-family: Poppins, sans-serif;
+      max-width: 100%;
     }
     .button-text {
           display: flex;

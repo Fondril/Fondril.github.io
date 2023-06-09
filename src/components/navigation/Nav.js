@@ -1,38 +1,33 @@
-// import styles of this component
 import styles from "./Nav.module.css"
 import React from 'react'
-// import other react pkg to use
-import Hamburger from 'hamburger-react'
-import { useState } from 'react'
+
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 // Nav component
-export default function Nav(props) {
-    const [isOpen, setOpen] = useState(false)
+export default function Navig(props) {
 
     return (
-        <nav className={props.darkMode ? `${styles.navDark} flex align-items-center`:`${styles.nav} flex align-items-center`}>
-            <ul className={`flex align-items-center ${styles["navbar-nav"]}`}>
-                <li className={`${styles["nav-item"]} ${styles["d-none-1100"]}`}>
-                    <a href="#" className={`${styles["nav-item"]} ${styles.active}`}>Home</a>
-                </li>
-                <li className={`${styles["nav-item"]} ${styles["d-none-1100"]}`}>
-                    <a href="#multim" className={`${styles["nav-item"]}`}>Multimedia</a>
-                </li>
-                <li className={`${styles["nav-item"]} ${styles["d-none-1100"]}`}>
-                    <a href="#main" className={`${styles["nav-item"]}`}>Interesting Shit</a>
-                </li>
-                <li className={`${styles["nav-item"]} ${styles["d-none-1100"]}`}>
-                    <a href="#main" className={`${styles["nav-item"]}`}>Latest Multimedia</a>
-                </li>
-                <li className={`${styles["nav-item"]} ${styles["d-none-1100"]}`}>
-                    <a href="#members" className={`${styles["nav-item"]}`}>Members</a>
-                </li>
-                <li className={`${styles["nav-item"]} ${styles["d-none-1100"]}`}>
-                    <a href="#main" className={`${styles["nav-item"]}`}>D&D</a>
-                </li>
-            </ul>
-            <div className={`${styles["toggler"]}`}>
+        <Navbar className={props.darkMode ? `${styles.navDark} flex align-items-center` : `${styles.nav} flex align-items-center`} id="nb" expand="lg">
+                <Navbar.Toggle aria-controls="navbar-dark-example" />
+                <ul className={`flex align-items-center ${styles["navbar-nav1"]}`}>
+                        <Nav.Link className={`${styles["nav-item"]}`} href="#banner">Home</Nav.Link>
+                        <NavDropdown
+                            id="nav-dropdown-dark-example"
+                            title="Dropdown"
+                            menuVariant={props.darkMode ? "dark" : "light"}
+                            className={`${styles["nav-item"]}`}
+                        >
+                            <NavDropdown.Item href="#multim">Interesting Shit</NavDropdown.Item>
+                            <NavDropdown.Item href="#">Latest Multimedia</NavDropdown.Item>
+                        </NavDropdown>
+                        <Nav.Link className={`${styles["nav-item"]}`} href="#members">Members</Nav.Link>
+                        <Nav.Link className={`${styles["nav-item"]}`} href="#">D&D</Nav.Link>
+                </ul>
+                <div className={`${styles["toggler"]}`}>
                     <p className={`${styles["toggler--light"]}`}>Light</p>
                     <div
                         className={`${styles["toggler--slider"]}`}
@@ -42,11 +37,6 @@ export default function Nav(props) {
                     </div>
                     <p className={`${styles["toggler--dark"]}`}>Dark</p>
                 </div>
-            <div className={`${styles["dd"]}`}>
-                <Hamburger color="#FF8A65" toggled={isOpen} toggle={setOpen} rounded />
-                {isOpen && <ul className={`${styles["ddUl"]}`}>
-                </ul>}
-            </div>
-        </nav>
+        </Navbar>
     )
 }

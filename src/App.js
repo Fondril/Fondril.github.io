@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Nav from './components/navigation/Nav.js';
 import Banner from './components/banner/banner.js';
+import Navig from './components/navigation/Nav.js';
 import Members from './components/members/members.js';
 import MultimediaFeed from './components/multimediafeed/multimediafeed.js';
 import DnD from './components/dnd/dnd.js';
@@ -36,8 +36,8 @@ const App = () => {
 
       return (
             <div className="App">
-                  <Nav darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-                  <Banner />
+                  <Navig darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+                  <Banner darkMode={darkMode}/>
                   <Members />
                   <MultimediaFeed multiMediaFeedIndex={multiMediaFeedIndex} multiMediaFeedRightArrow={multiMediaFeedRightArrow} multiMediaFeedLeftArrow={multiMediaFeedLeftArrow} />
                   <DnD/>

@@ -2,13 +2,13 @@ import React from 'react';
 import './banner.css';
 import akalibackground from '../../assets/akalibackground.png';
 
-function Banner () {
+function Banner (props) {
 
   return (
       
-    <div className="banner">
+    <div id="banner" className="banner">
             <div className='bannernamewrapper'>
-                  <div className='bannername'>
+                  <div className={props.darkMode? 'dark_bannername':'bannername'}>
                         Fondidia
                   </div>
             </div>
