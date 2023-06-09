@@ -5,9 +5,10 @@ import rightarrow from '../../assets/multimedia-feed-arrow-to-right.png';
 import './mainwindow.css';
 import featuredProjects from './projects';
 
-const feedcase = ( item ) => {
+
+const feedcase = ( item, window ) => {
       return (
-      <div className={'feed-window'} key={item.projectname}>
+      <div className={window} key={item.projectname}>
             <div className='mmf-media'>
                   {item.picture}
                   <div className='mmf-submit-name-wrapper'>
@@ -24,10 +25,20 @@ const feedcase = ( item ) => {
 
 function MultimediaFeed ({multiMediaFeedIndex, multiMediaFeedLeftArrow, multiMediaFeedRightArrow}) {
 
+      let indexLeft = multiMediaFeedIndex-1;
+      if (indexLeft === -1){
+            indexLeft = 11
+      }
+      let indexRight = multiMediaFeedIndex+1;
+      if(indexRight === 12){
+            indexRight = 0
+      }
+
 
   return (
     <div id="multim" className="multimedia-feed-container">
-
+            
+            {/* Feed filters */}
             <div id='mmf-navbar' className='multimedia-feed-navbar'>
                   <div className='mmf-navbar-element active padding'>All</div>
                   <div className='mmf-navbar-element'>Games</div>
@@ -37,15 +48,18 @@ function MultimediaFeed ({multiMediaFeedIndex, multiMediaFeedLeftArrow, multiMed
                   <div className='mmf-navbar-element'>Written Media</div>
                   <div className='mmf-navbar-element'>Other</div>
             </div>
-
+            
+            {/* Main window */}
             <div className='mmf-feed-scroll'>
-                                    {featuredProjects.map(item => feedcase(item))}
+                  {feedcase(featuredProjects[indexLeft], 'left-window')}
+                  {feedcase(featuredProjects[multiMediaFeedIndex], 'active-window')}
+                  {feedcase(featuredProjects[indexRight], 'right-window')}
             </div>
 
+            {/* // Buttons // */}
             <div className='left-arrow-wrapper' type='button' onClick={multiMediaFeedLeftArrow}> 
                   <img className='mmf-arrow' src={leftarrow} alt='' /> 
             </div>
-
             <div className='right-arrow-wrapper' type='button' onClick={multiMediaFeedRightArrow}>
                   <img className='mmf-arrow' src={rightarrow} alt='' />
             </div>
