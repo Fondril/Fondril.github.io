@@ -1,7 +1,6 @@
 .mmf-feed-scroll {
       display: flex;
       position: relative;
-      top: 15%;
       width: fit-content;
       height: 70%;
       align-items: center;
@@ -23,9 +22,10 @@
       align-items: center;
       justify-content: center;
       transition: all 0.3s;
-      background-color: #A4A8D1;
+      background-color: #47077fe0;
       border: 2px ridge #0e042d;
       box-shadow: 3px 3px 7px 3px rgb(0 0 0 / 0.2);
+      color: white;
 }
 .active-window {
       min-width: 60%;
@@ -38,9 +38,10 @@
       align-items: center;
       justify-content: center;
       transition: all 0.3s;
-      background-color: #A4A8D1;
+      background-color: #47077fe0;
       border: 2px ridge #0e042d;
       box-shadow: 3px 3px 7px 3px rgb(0 0 0 / 0.2);
+      color: white;
 }
 .right-window {
       height: 75%;
@@ -50,9 +51,10 @@
       align-items: center;
       justify-content: center;
       transition: all 0.3s;
-      background-color: #A4A8D1;
+      background-color: #47077fe0;
       border: 2px ridge #0e042d;
       box-shadow: 3px 3px 7px 3px rgb(0 0 0 / 0.2);
+      color: white;
 }
 
 
@@ -61,7 +63,6 @@
       flex-direction: column;
       align-items: flex-start;
       font-size: 18px;
-      color: #0e042d;
       justify-content: left;
       padding-left: 5%;
       padding-right: 5%;
@@ -111,47 +112,3 @@
 .mmf-submit-name {
       font-size: 1.5em;
 }
-
-
-.left-arrow-wrapper {
-      position: absolute;
-      width: 3rem;
-      height: 3rem;
-      top: 92%;
-      left: 70%;
-
-      transition: all 0.2s;
-}
-.left-arrow-wrapper:hover {
-      transition: all 0.15s linear;
-      transform: scale(120%);
-}
-.left-arrow-wrapper:active{
-      transition: all 0.15s linear;
-      transform: scale(90%);
-}
-
-.right-arrow-wrapper {
-      position: absolute;
-      width: 3rem;
-      height: 3rem;
-      top: 92%;
-      left: 75%;
-
-      transition: all 0.2s;
-}
-.right-arrow-wrapper:hover {
-      transition: all 0.15s linear;
-      transform: scale(120%);
-}
-.right-arrow-wrapper:active{
-      transition: all 0.15s linear;
-      transform: scale(90%);
-}
-
-.mmf-arrow {
-      height: 100%;
-      width: 100%;
-      object-fit: fill;
-}
-

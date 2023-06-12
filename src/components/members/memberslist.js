@@ -2,7 +2,7 @@ const membersList = [
       {
             memberPicture: '../../assets/circlegarfield.png',
             memberName: 'Garfield Garfankle',
-            memberNote: 'Jede lazanje i spava, isto ko aca'
+            memberNote: 'Jede lazanje i spava, isto ko Aca'
       },
       {
             memberPicture: '',
@@ -12,7 +12,7 @@ const membersList = [
       {
             memberPicture: '',
             memberName: 'Plolba',
-            memberNote: 'april u beogradu'
+            memberNote: 'April u beogradu'
       }
 ]
 

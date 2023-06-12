@@ -57,14 +57,18 @@ function MultimediaFeed ({multiMediaFeedIndex, multiMediaFeedLeftArrow, multiMed
             </div>
 
             {/* // Buttons // */}
-            <div className='left-arrow-wrapper' type='button' onClick={multiMediaFeedLeftArrow}> 
-                  <img className='mmf-arrow' src={leftarrow} alt='' /> 
-            </div>
-            <div className='right-arrow-wrapper' type='button' onClick={multiMediaFeedRightArrow}>
-                  <img className='mmf-arrow' src={rightarrow} alt='' />
-            </div>
+            <div className='buttons'>
+                  <div className='multimedia-feed-button' type='button' >View all Multimedia!</div>
 
-            <div className='multimedia-feed-button' type='button'>View all Multimedia!</div>
+                  <div className='arrows'>
+                        <div className='left-arrow-wrapper' type='button' onClick={multiMediaFeedLeftArrow}> 
+                              <img className='mmf-arrow' src={leftarrow} alt='' /> 
+                        </div>
+                        <div className='right-arrow-wrapper' type='button' onClick={multiMediaFeedRightArrow}>
+                              <img className='mmf-arrow' src={rightarrow} alt='' />
+                        </div>
+                  </div>
+            </div>
     </div>
   );
 }

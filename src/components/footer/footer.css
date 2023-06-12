@@ -1,7 +1,7 @@
 .footer{
-      height: 10vh;
+      min-height: 10vh;
       width: 100%;
-      background-color: rgb(43, 39, 39);
+      background-color: #160227;
       border-top: 6px solid #000000;
 }
 .text-wrapper{
