@@ -1,70 +1,60 @@
 .mmf-feed-scroll {
       display: flex;
       position: relative;
-      top: 15%;
       width: fit-content;
       height: 70%;
       align-items: center;
       justify-content: center;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      scroll-behavior: smooth;
       transition: all 1s;
-      padding-left: 4%;
-      padding-right: 4%;
-}
+      overflow: hidden;
 
-.center-window {
-      position: relative;
-      height: 100%;
-      width: 80%;
-      top: 0;
-      left: 10%;
+}
+::-webkit-scrollbar {
+      width: 0;  /* Remove scrollbar space */
+      background: transparent;  /* Optional: just make scrollbar invisible */
+  }
+
+.left-window {
+      height: 75%;
+      min-width: 60%;
       
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: all 0.6s;
-      background-color: #F4C095;
-      border: 2px ridge #0e042d;
-      box-shadow: 3px 3px 7px 3px rgb(0 0 0 / 0.4);
-}
-.center-window-wrapper {
-      position: relative;
-      height: 100%;
-      width: 100%;
-}
-
-.feed-window {
-      min-width: 50rem;
-      height: 80%;
-      width: 60vw;
-      margin-left: 2em;
-      margin-right: 2em;
-
-      scroll-snap-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 1s;
-      background-color: #A4A8D1;
+      transition: all 0.3s;
+      background-color: #47077fe0;
       border: 2px ridge #0e042d;
       box-shadow: 3px 3px 7px 3px rgb(0 0 0 / 0.2);
+      color: white;
 }
-.right-window {
-      position: absolute;
-      height: 60%;
-      width: 60%;
-      top: 20%;
-      left: 37%;
+.active-window {
+      min-width: 60%;
+      height: 90%;
+      z-index: 2;
+      margin-left: 3%;
+      margin-right: 3%;
 
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: all 0.6s;
-      background-color: rgb(238, 238, 242);
+      transition: all 0.3s;
+      background-color: #47077fe0;
       border: 2px ridge #0e042d;
-      box-shadow: 3px 3px 7px 3px rgb(0 0 0 / 0.4);
+      box-shadow: 3px 3px 7px 3px rgb(0 0 0 / 0.2);
+      color: white;
+}
+.right-window {
+      height: 75%;
+      min-width: 60%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+      background-color: #47077fe0;
+      border: 2px ridge #0e042d;
+      box-shadow: 3px 3px 7px 3px rgb(0 0 0 / 0.2);
+      color: white;
 }
 
 
@@ -73,7 +63,6 @@
       flex-direction: column;
       align-items: flex-start;
       font-size: 18px;
-      color: #0e042d;
       justify-content: left;
       padding-left: 5%;
       padding-right: 5%;
@@ -123,31 +112,3 @@
 .mmf-submit-name {
       font-size: 1.5em;
 }
-
-
-.left-arrow-wrapper {
-      position: absolute;
-      width: 3rem;
-      height: 3rem;
-      top: 89%;
-      left: 70%;
-
-      transition: all 0.2s;
-}
-
-.right-arrow-wrapper {
-      position: absolute;
-      width: 3rem;
-      height: 3rem;
-      top: 89%;
-      left: 75%;
-
-      transition: all 0.2s;
-}
-
-.mmf-arrow {
-      height: 100%;
-      width: 100%;
-      object-fit: fill;
-}
-

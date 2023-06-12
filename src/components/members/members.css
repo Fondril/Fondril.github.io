@@ -1,7 +1,135 @@
-.emptydiv {
+.members {
+      padding-top: 65px;
+      padding-bottom: 130px;
+      height: fit-content;
+      background-color: white;
+      border-top: 6px ridge #0e042d;
+}
+
+.header {
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      font-size: 4rem;
+      padding-left: 6%;
+      padding-bottom: 1%;
+}
+
+.members-wrapper {
+      display: flex;
+      flex-direction: column;
       width: 100%;
-      /* background-color: antiquewhite; */
-      background-color: #05299E;
-      height: 2000px;
-      scroll-margin-top: 70px;
+      height: fit-content;
+}
+.button-and-arrow {
+      display: flex;
+      align-items: center;
+      padding-left: 6%;
+      padding-right: 6%;
+      justify-content: space-between;
+      padding-top: 3.5%;
+}
+
+.invis-div {
+      width: 20rem;
+      height: 100%;
+}
+
+.arrow-wrapper {
+      height: 3rem;
+      width: 10rem;
+}
+.arrow{
+      object-fit: contain;
+      object-position: center;
+      height: 3rem;
+      width: 10rem;
+}
+.view-all-button {
+      height: 3rem;
+      width: 20rem;
+      background-color: #47077fd8;
+      border-radius: 15px;
+      transition: all 0.3s linear;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      border: 4px solid #0e042d;
+      box-shadow: 3px 3px 7px 3px rgb(0 0 0 / 0.4);
+}
+.view-all-button:hover {
+      transition: all 0.3s linear;
+      transform: scale(110%);
+      cursor: pointer;
+}
+.view-all-button:active{
+      transition: all 0.15s linear;
+      transform: scale(90%);
+}
+
+
+.object {
+      width: 35%;
+      height: 220px;
+      background-color: #47077fe0;
+      color: white;
+      border-radius: 50px;
+      justify-content: left;
+      align-items: center;
+      margin-top: 1%;
+      margin-bottom: 1%;
+
+      transition: all 0.15s linear;
+      box-shadow: 3px 3px 7px 1px rgb(0 0 0 / 0.3);
+}
+.object:hover{
+      transition: all 0.15s linear;
+      transform: scale(102%);
+      cursor: pointer;
+}
+.object:active{
+      transition: all 0.15s linear;
+      transform: scale(98%);
+}
+.left-object {
+      margin-left: 20%;
+      display: flex;
+}
+.right-object {
+      display: flex;
+      margin-left: 45%;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+}
+.object-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 6%;
+      padding-right: 6%;
+      height: 180px;
+      gap: 20px;
+
+}
+.object-picture {
+      height: 200px;
+      width: 200px;
+      padding-left: 20px;
+      padding-right: 20px;
+}
+
+
+.member-name {
+      font-size: 1.4rem;
+}
+
+.member-note {
+      font-size: 1.3rem;
+}
+.object-invis-div {
+      height: 1.5rem;
+      width: 1rem;
 }
