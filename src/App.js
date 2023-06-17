@@ -37,10 +37,12 @@ const App = () => {
       return (
             <div className="App">
                   <Navig darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+
                   <Banner darkMode={darkMode}/>
                   <Members />
                   <MultimediaFeed multiMediaFeedIndex={multiMediaFeedIndex} multiMediaFeedRightArrow={multiMediaFeedRightArrow} multiMediaFeedLeftArrow={multiMediaFeedLeftArrow} />
                   <DnD/>
+                  
                   <Footer/>
             </div>
       );
