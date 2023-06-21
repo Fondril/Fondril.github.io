@@ -5,7 +5,7 @@ import App from './App';
 import Members from './pages/membersPage/membersPage.js';
 import Multimedia from './pages/multimediaPage/multimediaPage.js';
 import reportWebVitals from './reportWebVitals';
-import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
       {

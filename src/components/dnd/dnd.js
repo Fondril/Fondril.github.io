@@ -29,7 +29,7 @@ function DnD () {
                               </div>
 
                               <div className='div2'>
-                              <iframe src="https://discord.com/widget?id=522510434079735841&theme=dark" width="400" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                              <iframe title="Discord" src="https://discord.com/widget?id=522510434079735841&theme=dark" width="400" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
                               </div>
 
                               <div className='div3'>
