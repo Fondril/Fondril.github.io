@@ -110,10 +110,12 @@ const memberListChildren = () => {
       return(
             fondidiaMembers.map( element => {
                   console.log(element.profilePic)
-
+                  // const a = element.profilePic.toString()
+                  // console.log(a)
                   return(
                         <div className="memberListChild">
                               <div className="memberListChildProfilePic">
+                                    {/* <img className="memberListChildProfilePic" src={require(a)} alt="Profile pic"/> */}
                                     <img className="memberListChildProfilePic" src={require('../../assets/profilePics/Uzi-pofilePic.png')} alt="Profile pic"/>
                               </div>
                               <div className="memberListChildDisName">{element.disName}</div>
