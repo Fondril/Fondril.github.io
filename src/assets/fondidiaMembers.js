@@ -1,10 +1,12 @@
+import ppic from './profilePics/Uzi-pofilePic.png';
+
 const fondidiaMembers = [
       {
             index: 0,
             name: 'Pera',
             lastName: 'Zdera',
             disName: 'Uzi',
-            profilePic: '../../assets/profilePics/Uzi-pofilePic.png',
+            profilePic: ppic,
             stats: {
                   stamina: 3,
                   defence: 3,
