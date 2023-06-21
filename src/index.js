@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import membersPage from './pages/membersPage/membersPage';
+import Members from './pages/membersPage/membersPage.js';
+import Multimedia from './pages/multimediaPage/multimediaPage.js';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
 
@@ -12,8 +13,12 @@ const router = createBrowserRouter([
             element: <App/>
       },
       {
-            path: 'membersPage',
-            element: <membersPage/>
+            path: 'members',
+            element: <Members/>
+      },
+      {
+            path: 'multimedia',
+            element: <Multimedia/>
       }
 
 ])

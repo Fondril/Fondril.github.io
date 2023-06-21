@@ -2,10 +2,10 @@
 .App {
       text-align: center;
       font-family: Poppins, sans-serif;
+      color: #47077F;
 
       max-width: 100%;
       min-width: 1400px;
-      color: #47077F;
     }
     .button-text {
           display: flex;

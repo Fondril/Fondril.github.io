@@ -3,6 +3,7 @@ import './members.css';
 import picture1 from '../../assets/circlegarfield.png';
 import downArrow from '../../assets/down-arrow.png';
 import membersList from './memberslist.js';
+import { Link } from 'react-router-dom';
 
 
 const memberList = (item, index) => {
@@ -35,7 +36,7 @@ function Members() {
             </div>
 
             <div className='button-and-arrow'>
-                  <div className='view-all-button'>View all Members!</div>
+                  <Link className='view-all-button' to='/members'>View all Members!</Link>
                   <div className='arrow-wrapper'><img className='arrow' src={downArrow} alt='down arrow'></img></div>
                   <div className='invis-div'></div>
                   

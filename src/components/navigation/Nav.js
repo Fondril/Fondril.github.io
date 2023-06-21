@@ -1,6 +1,7 @@
 import styles from "./Nav.module.css"
 import React from 'react'
 
+import { Link } from "react-router-dom";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -14,7 +15,8 @@ export default function Navig(props) {
         <Navbar className={props.darkMode ? `${styles.navDark} flex align-items-center` : `${styles.nav} flex align-items-center`} id="nb" expand="lg">
                 <Navbar.Toggle aria-controls="navbar-dark-example" />
                 <ul className={`flex align-items-center ${styles["navbar-nav1"]}`}>
-                        <Nav.Link className={`${styles["nav-item"]}`} href="#banner">Home</Nav.Link>
+                        <Link className={`${styles["nav-item"]}`} to='/'>Home</Link>
+                        {/* <Nav.Link className={`${styles["nav-item"]}`} href="#banner">Home</Nav.Link> */}
                         <NavDropdown
                             id="nav-dropdown-dark-example"
                             title="Dropdown"
@@ -24,7 +26,8 @@ export default function Navig(props) {
                             <NavDropdown.Item href="#multim">Interesting Shit</NavDropdown.Item>
                             <NavDropdown.Item href="#">Latest Multimedia</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link className={`${styles["nav-item"]}`} href="#members">Members</Nav.Link>
+                        <Link className={`${styles["nav-item"]}`} to='/members'>Members</Link>
+                        {/* <Nav.Link className={`${styles["nav-item"]}`} href="#members">Members</Nav.Link> */}
                         <Nav.Link className={`${styles["nav-item"]}`} href="#">D&D</Nav.Link>
                 </ul>
                 <div className={`${styles["toggler"]}`}>

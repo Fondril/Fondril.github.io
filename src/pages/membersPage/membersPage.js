@@ -1,13 +1,14 @@
 import React from 'react';
 import Navig from '../../components/navigation/Nav';
-import Footer from '../../components/footer/footer';
+import Footer from '../../components/footer/footer.js';
+import AllMembers from '../../components/allMembers/allMembers';
 
-function membersPage () {
+const membersPage = () => {
       return (
             <div>
-                  <Navig />
-                  <allMembers/>
-                  <userPage/>
+                  <Navig  />
+                  <AllMembers/>
+                  {/* <UserPage/> */}
                   <Footer/>
             </div>
       )
