@@ -37,7 +37,7 @@ const singleMember = (memberIndex) => {
       return (
             <div className="singleMember">
                   <div className="singleMemberHeader">
-                        <div className="singleMemberProfilePic"><img className="singleMemberProfilePic" src={require('../../assets/profilePics/Uzi-pofilePic.png')} alt="Profile pic" /></div>
+                        <div className="singleMemberProfilePic"><img className="singleMemberProfilePic" src={fondidiaMembers[memberIndex].profilePic} alt="Profile pic" /></div>
                         <div className="singleMemberProfile">
                               <div className="singleMemberProfileName">{fondidiaMembers[memberIndex].name} {fondidiaMembers[memberIndex].lastName} AKA {fondidiaMembers[memberIndex].disName}</div>
                               <div className="singleMemberProfileStatsWrapper font21">Stats</div>

@@ -13,7 +13,22 @@ const membersList = [
             memberPicture: '',
             memberName: 'Plolba',
             memberNote: 'April u beogradu'
-      }
+      },
+      {
+            memberPicture: '',
+            memberName: 'StevieG',
+            memberNote: 'He be shootin, he be scorin'
+      },
+      {
+            memberPicture: '',
+            memberName: 'StevieG',
+            memberNote: 'He be shootin, he be scorin'
+      },
+      {
+            memberPicture: '',
+            memberName: 'StevieG',
+            memberNote: 'He be shootin, he be scorin'
+      },
 ]
 
 export default membersList;

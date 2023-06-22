@@ -9,7 +9,12 @@ import './App.css';
 
 const App = () => {
       const [multiMediaFeedIndex, setMultimediafeedindex] = useState(0)
-      const [darkMode, setDarkMode] = React.useState(false)
+      const [darkMode, setDarkMode] = useState(false)
+      const [expand, setExpand] = useState(false)
+
+      function changeExpand() {
+            setExpand(prevMode => !prevMode);
+      }
 
       function toggleDarkMode() {
             setDarkMode(prevMode => !prevMode)
@@ -37,9 +42,8 @@ const App = () => {
       return (
             <div className="App">
                   <Navig darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-
                   <Banner darkMode={darkMode}/>
-                  <Members />
+                  <Members isExpaned={expand} changeExpand={changeExpand}/>
                   <MultimediaFeed multiMediaFeedIndex={multiMediaFeedIndex} multiMediaFeedRightArrow={multiMediaFeedRightArrow} multiMediaFeedLeftArrow={multiMediaFeedLeftArrow} />
                   <DnD/>
                   

@@ -17,6 +17,15 @@ li{
     height: 65px;
 }
 
+.logo {
+    display: block;
+    background-size: cover;
+    background-position: top center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
 .navDark {
     box-shadow: 0 2px 35px 0 rgba(0, 0, 0, .1);
     width: 100%;
@@ -28,12 +37,6 @@ li{
     height: 65px;
 }
 
-.nav-title {
-    font-size: 1.8rem;
-    color: white;
-    padding-left: 8px;
-}
-
 .navbar-nav1 {
     margin-left: 20px;
     column-gap: 25px;
@@ -43,23 +46,19 @@ li{
 
 .nav-item {
     color: black;
+    text-decoration: none;
 }
 .navDark .nav-item {
     color: white;
-}
-.nav-link:active{
-color: aqua;
+    text-decoration: none;
 }
 
-.nav-item.active {
-    position: relative;
+.nav .nav-item:hover{
+    color:black;
 }
-
-
-.navDark .nav-item.active::before {
-    background: white;
+.navDark .nav-item.active {
+    color: #160227;
 }
-
 
 .toggler {
     display: flex;

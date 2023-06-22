@@ -12,15 +12,26 @@
       align-items: left;
       font-size: 4rem;
       padding-left: 6%;
-      padding-bottom: 1%;
+      padding-bottom: 3%;
 }
 
 .members-wrapper {
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: fit-content;
+      height: 780px;
+      flex-wrap: wrap;
+      transition: 1s ease-in-out;
 }
+
+.members-wrapper-expaned {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: fit-content;
+      transition: 1s ease-in-out;
+}
+
 .button-and-arrow {
       display: flex;
       align-items: center;
@@ -37,14 +48,22 @@
 
 .arrow-wrapper {
       height: 3rem;
-      width: 10rem;
+      width: 12rem;
+      background-color: white;
+      border: none;
 }
-.arrow{
+
+.arrow-wrapper:hover {
+      cursor: pointer;
+}
+
+.arrow {
       object-fit: contain;
       object-position: center;
       height: 3rem;
       width: 10rem;
 }
+
 .view-all-button {
       height: 3rem;
       width: 20rem;
@@ -60,13 +79,15 @@
       border: 4px solid #0e042d;
       box-shadow: 3px 3px 7px 3px rgb(0 0 0 / 0.4);
 }
+
 .view-all-button:hover {
       transition: all 0.3s linear;
       transform: scale(110%);
       cursor: pointer;
       color: white;
 }
-.view-all-button:active{
+
+.view-all-button:active {
       transition: all 0.15s linear;
       transform: scale(90%);
 }
@@ -86,25 +107,30 @@
       transition: all 0.15s linear;
       box-shadow: 3px 3px 7px 1px rgb(0 0 0 / 0.3);
 }
-.object:hover{
+
+.object:hover {
       transition: all 0.15s linear;
       transform: scale(102%);
       cursor: pointer;
 }
-.object:active{
+
+.object:active {
       transition: all 0.15s linear;
       transform: scale(98%);
 }
+
 .left-object {
-      margin-left: 20%;
+      margin-left: 15%;
       display: flex;
 }
+
 .right-object {
       display: flex;
-      margin-left: 45%;
+      margin-left: 50%;
       flex-direction: row-reverse;
       justify-content: space-between;
 }
+
 .object-text {
       display: flex;
       flex-direction: column;
@@ -116,21 +142,23 @@
       gap: 20px;
 
 }
+
 .object-picture {
-      height: 200px;
-      width: 200px;
-      padding-left: 20px;
-      padding-right: 20px;
+      height: 350px;
+      width: 350px;
 }
 
 
 .member-name {
       font-size: 1.4rem;
+      text-align: start;
 }
 
 .member-note {
       font-size: 1.3rem;
+      text-align: start;
 }
+
 .object-invis-div {
       height: 1.5rem;
       width: 1rem;
