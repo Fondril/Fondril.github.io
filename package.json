@@ -2,7 +2,7 @@
   "name": "fondidia",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Fondril.github.io",
+  "homepage": "http://Fondril.github.io/signIn",
   "dependencies": {
     "@mui/material": "^5.13.0",
     "@testing-library/jest-dom": "^5.16.5",
