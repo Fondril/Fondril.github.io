@@ -33,9 +33,11 @@
       height: 180px;
       width: 150px;
       align-items: center;
+      gap: 10px;
 }.memberListChildProfilePic{
       width: 150px;
       height: 150px;
+      border-radius: 15px;
 }
 
 

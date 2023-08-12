@@ -39,6 +39,16 @@
       height: 3rem;
       width: 10rem;
 }
+.arrow-wrapper:hover {
+      transition: all 0.3s linear;
+      transform: scale(110%);
+      cursor: pointer;
+      color: white;
+}
+.arrow-wrapper:active{
+      transition: all 0.15s linear;
+      transform: scale(90%);
+}
 .arrow{
       object-fit: contain;
       object-position: center;

@@ -24,7 +24,7 @@ const feedcase = ( item, window ) => {
 );}
 
 function MultimediaFeed ({multiMediaFeedIndex, multiMediaFeedLeftArrow, multiMediaFeedRightArrow}) {
-
+      console.log(multiMediaFeedIndex)
       let indexLeft = multiMediaFeedIndex-1;
       if (indexLeft === -1){
             indexLeft = 11

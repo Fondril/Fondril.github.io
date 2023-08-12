@@ -1,7 +1,7 @@
 import React from "react";
 import './allMembers.css';
 import searchIcon from '../../assets/searchButton.jpg'
-import fondidiaMembers from "../../assets/fondidiaMembers";
+import fondidiaMembers from "../../jsAssets/fondidiaMembers";
 
 let memberIndex = 0;
 
@@ -106,37 +106,17 @@ const singleMember = (memberIndex) => {
 
                         </div>
                   </div>
-            </div>
-      )
-}
+            </div>)}
 
 const memberListChildren = () => {
-<<<<<<< HEAD
-      return(
-            fondidiaMembers.map( element => {
-                  console.log(element.profilePic)
-                  // const a = element.profilePic.toString()
-                  // console.log(a)
-                  return(
-                        <div className="memberListChild">
-                              <div className="memberListChildProfilePic">
-                                    {/* <img className="memberListChildProfilePic" src={require(a)} alt="Profile pic"/> */}
-                                    <img className="memberListChildProfilePic" src={require('../../assets/profilePics/Uzi-pofilePic.png')} alt="Profile pic"/>
-                              </div>
-                              <div className="memberListChildDisName">{element.disName}</div>
-=======
       return (
             fondidiaMembers.map(element => (
                   <div className="memberListChild">
                         <div className="memberListChildProfilePic">
                               <img className="memberListChildProfilePic" src={element.profilePic} alt="Profile pic" />
->>>>>>> d540acafa982fde5f4b3674c4d8279cd7b1f0c59
                         </div>
                         <div className="memberListChildDisName">{element.disName}</div>
-                  </div>
-            ))
-      )
-}
+                  </div>)))}
 
 
 function AllMembers() {

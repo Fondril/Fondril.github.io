@@ -1,9 +1,9 @@
 import React from "react";
-import './multimediaPage.scss'
 import Navig from "../../components/navigation/Nav"
+import './profilePage.scss'
 import backgroundImage from '../../assets/underConstrucion.jpg'
 
-const multimediaPage = () => {
+const ProfilePage = () =>{
       return(
             <div>
                   <Navig/>
@@ -12,4 +12,4 @@ const multimediaPage = () => {
       )
 }
 
-export default multimediaPage;
+export default ProfilePage;
